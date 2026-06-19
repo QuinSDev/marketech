@@ -1,10 +1,10 @@
-# 🛒 TechStore Medellín
+# 🛒 MarkeTech
 
 Tienda virtual de tecnología desarrollada por el equipo de ADSO · SENA CTM Itagüí · 2026.
 
 ## 📋 Descripción
 
-TechStore es una tienda en línea de productos tecnológicos para desarrolladores, estudiantes y profesionales de Colombia. El sitio incluye catálogo de productos, información del equipo y formulario de contacto.
+MarkeTech es una tienda en línea de productos tecnológicos para desarrolladores, estudiantes y profesionales de Colombia. El sitio incluye catálogo de productos, información del equipo y formulario de contacto.
 
 ## 🛠️ Tecnologías
 
@@ -18,9 +18,8 @@ TechStore es una tienda en línea de productos tecnológicos para desarrolladore
 <!-- CAMBIAR: Agregar los integrantes reales con sus usuarios de GitHub -->
 | Nombre | Rol | GitHub |
 |--------|-----|--------|
-| Nombre 1 | Frontend | [@usuario1](https://github.com/usuario1) |
-| Nombre 2 | Frontend | [@usuario2](https://github.com/usuario2) |
-| Nombre 3 | Frontend | [@usuario3](https://github.com/usuario3) |
+| Nombre 1 | Backend | [@Andres](https://github.com/andrzguti22) |
+| Nombre 2 | FullStack | [@Sebastian](https://github.com/QuinSDev) |
 
 ## 📁 Estructura del proyecto
 
@@ -39,10 +38,6 @@ techstore/
 <!-- CAMBIAR: Agregar la URL de GitHub Pages cuando esté activa -->
 [https://TU-USUARIO.github.io/techstore](https://TU-USUARIO.github.io/techstore)
 
-## 📌 Estado del proyecto
 
-En desarrollo · Sesiones 7 y 8 · Junio 2026
-
----
 
 *Ficha 3115970 · ADSO · SENA CTM Itagüí*
