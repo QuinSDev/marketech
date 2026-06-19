@@ -1,155 +1,218 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contacto — MarkeTech</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto — MarkeTech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="index.html" class="nav-logo">MARKE<span>TECH</span></a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="productos.html">Productos</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+      <a href="productos.html" class="btn-nav">Ver catálogo</a>
+    </nav>
 
-  <nav class="navbar">
-    <a href="index.html" class="nav-logo">MARKE<span>TECH</span></a>
-    <ul class="nav-links">
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="productos.html">Productos</a></li>
-      <li><a href="nosotros.html">Nosotros</a></li>
-      <li><a href="contacto.html" class="active">Contacto</a></li>
-    </ul>
-    <a href="productos.html" class="btn-nav">Ver catálogo</a>
-  </nav>
-
-  <div class="contact-hero">
-    <div class="container">
-      <p class="section-tag">// Hablemos</p>
-      <h1 class="section-title">Contacto</h1>
-      <p style="color:var(--muted);max-width:500px">
-        ¿Tenés preguntas sobre un producto? ¿Querés hacer un pedido?
-        Escribinos y te respondemos en menos de 24 horas.
-      </p>
+    <div class="contact-hero">
+      <div class="container">
+        <p class="section-tag">// Hablemos</p>
+        <h1 class="section-title">Contacto</h1>
+        <p style="color: var(--muted); max-width: 500px">
+          ¿Tenés preguntas sobre un producto? ¿Querés hacer un pedido? Escribinos y te respondemos en menos de 24 horas.
+        </p>
+      </div>
     </div>
-  </div>
 
-  <section class="contact-section">
-    <div class="container">
-      <div class="contact-grid">
-
-        <!-- FORMULARIO -->
-        <div>
-          <p class="section-tag" style="margin-bottom:1.5rem">// Formulario de contacto</p>
-          <form class="contact-form" onsubmit="handleSubmit(event)">
-            <div class="form-group">
-              <label for="nombre">Nombre completo</label>
-              <input type="text" id="nombre" placeholder="Tu nombre" required>
-            </div>
-            <div class="form-group">
-              <label for="email">Correo electrónico</label>
-              <input type="email" id="email" placeholder="tu@correo.com" required>
-            </div>
-            <div class="form-group">
-              <label for="asunto">Asunto</label>
-              <select id="asunto">
-                <option value="">Seleccioná un asunto</option>
-                <option value="consulta">Consulta de producto</option>
-                <option value="pedido">Hacer un pedido</option>
-                <option value="descuento">Descuento estudiante SENA</option>
-                <option value="soporte">Soporte postventa</option>
-                <option value="otro">Otro</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="mensaje">Mensaje</label>
-              <textarea id="mensaje" placeholder="Contanos en qué podemos ayudarte..." required></textarea>
-            </div>
-            <button type="submit" class="btn-submit">Enviar mensaje</button>
-          </form>
-          <div id="success-msg" style="display:none;margin-top:1rem;padding:1rem;background:rgba(0,200,150,0.1);border:1px solid var(--green);border-radius:8px;color:var(--green)">
-            ✅ Mensaje enviado. Te contactamos pronto.
-          </div>
-        </div>
-
-        <!-- INFO -->
-        <div>
-          <p class="section-tag" style="margin-bottom:1.5rem">// Información de contacto</p>
-          <div class="contact-info">
-            <div class="info-item">
-              <span class="info-icon">📍</span>
-              <div>
-                <p class="info-label">Ubicación</p>
-                <p class="info-value">Medellín, Antioquia, Colombia</p>
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- FORMULARIO -->
+          <div>
+            <p class="section-tag" style="margin-bottom: 1.5rem">// Formulario de contacto</p>
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+              <div class="form-group">
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" placeholder="Tu nombre" required />
               </div>
-            </div>
-            <div class="info-item">
-              <span class="info-icon">📧</span>
-              <div>
-                <p class="info-label">Correo</p>
-                <p class="info-value">hola@marketech.co</p>
+              <div class="form-group">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" placeholder="tu@correo.com" required />
               </div>
-            </div>
-            <div class="info-item">
-              <span class="info-icon">📱</span>
-              <div>
-                <p class="info-label">WhatsApp</p>
-                <p class="info-value">+57 314 567 8900</p>
+              <div class="form-group">
+                <label for="asunto">Asunto</label>
+                <select id="asunto">
+                  <option value="">Seleccioná un asunto</option>
+                  <option value="consulta">Consulta de producto</option>
+                  <option value="pedido">Hacer un pedido</option>
+                  <option value="descuento">Descuento estudiante SENA</option>
+                  <option value="soporte">Soporte postventa</option>
+                  <option value="otro">Otro</option>
+                </select>
               </div>
-            </div>
-            <div class="info-item">
-              <span class="info-icon">🕐</span>
-              <div>
-                <p class="info-label">Horario de atención</p>
-                <p class="info-value">Lunes a viernes · 8am – 6pm</p>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" placeholder="Contanos en qué podemos ayudarte..." required></textarea>
               </div>
-            </div>
-            <div class="info-item" style="border-color:rgba(0,229,255,0.2);background:rgba(0,229,255,0.05)">
-              <span class="info-icon">🎓</span>
-              <div>
-                <p class="info-label">Descuento estudiantes</p>
-                <p class="info-value">10% con carné SENA vigente</p>
-              </div>
+              <button type="submit" class="btn-submit">Enviar mensaje</button>
+            </form>
+            <div
+              id="success-msg"
+              style="
+                display: none;
+                margin-top: 1rem;
+                padding: 1rem;
+                background: rgba(0, 200, 150, 0.1);
+                border: 1px solid var(--green);
+                border-radius: 8px;
+                color: var(--green);
+              "
+            >
+              ✅ Mensaje enviado. Te contactamos pronto.
             </div>
           </div>
+
+          <!-- INFO -->
+          <div>
+            <p class="section-tag" style="margin-bottom: 1.5rem">// Información de contacto</p>
+            <div class="contact-info">
+              <div class="info-item">
+                <span class="info-icon">📍</span>
+                <div>
+                  <p class="info-label">Ubicación</p>
+                  <p class="info-value">Medellín, Antioquia, Colombia</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📧</span>
+                <div>
+                  <p class="info-label">Correo</p>
+                  <p class="info-value">hola@marketech.co</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">📱</span>
+                <div>
+                  <p class="info-label">WhatsApp</p>
+                  <p class="info-value">+57 314 567 8900</p>
+                </div>
+              </div>
+              <div class="info-item">
+                <span class="info-icon">🕐</span>
+                <div>
+                  <p class="info-label">Horario de atención</p>
+                  <p class="info-value">Lunes a viernes · 8am – 6pm</p>
+                </div>
+              </div>
+              <div class="info-item" style="border-color: rgba(0, 229, 255, 0.2); background: rgba(0, 229, 255, 0.05)">
+                <span class="info-icon">🎓</span>
+                <div>
+                  <p class="info-label">Descuento estudiantes</p>
+                  <p class="info-value">10% con carné SENA vigente</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container footer-grid">
-      <div>
-        <a href="index.html" class="nav-logo">MERKA<span>TECH</span></a>
-        <p class="footer-desc">Tecnología para todos en Medellín, Colombia.</p>
-      </div>
-      <div>
-        <p class="footer-title">Tienda</p>
-        <ul>
-          <li><a href="productos.html">Productos</a></li>
-          <li><a href="nosotros.html">Nosotros</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
-        </ul>
-      </div>
-      <div>
-        <p class="footer-title">Contacto</p>
-        <ul>
-          <li>Medellín, Colombia</li>
-          <li>hola@marketech.co</li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2026 MerkaTech · Construido con HTML, CSS y GitHub Pages</p>
-    </div>
-  </footer>
+    <!-- PREGUNTAS FRECUENTES -->
 
-  <script>
-    function handleSubmit(e) {
-      e.preventDefault();
-      document.getElementById('success-msg').style.display = 'block';
-      e.target.reset();
-    }
-  </script>
+    <section class="faq-section">
+      <div class="container">
+        ```
+        <p class="section-tag">// Ayuda rápida</p>
+        <h2 class="section-title">Preguntas Frecuentes</h2>
 
-</body>
+        <div class="faq-container">
+          <details class="faq-item">
+            <summary>¿Qué es MERKATECH?</summary>
+            <p>
+              MERKATECH es un proyecto académico desarrollado por estudiantes de Análisis y Desarrollo de Software
+              (ADSO), enfocado en la creación de una plataforma web para la visualización y gestión de productos
+              tecnológicos.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Los productos publicados están disponibles para compra real?</summary>
+            <p>
+              No. Los productos mostrados en esta plataforma tienen fines educativos y demostrativos. El objetivo es
+              mostrar el diseño, organización y funcionalidades de una tienda tecnológica en línea.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Qué tecnologías se utilizaron para desarrollar el proyecto?</summary>
+            <p>
+              El proyecto fue desarrollado utilizando HTML5, CSS3, JavaScript, Git y GitHub Pages, aplicando buenas
+              prácticas de diseño web responsivo y control de versiones.
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Quiénes desarrollaron MERKATECH?</summary>
+            <p>
+              El proyecto fue desarrollado por Andrés Gutiérrez y Sebastián Quintero como parte de su proceso de formación en el
+              programa de Análisis y Desarrollo de Software (ADSO).
+            </p>
+          </details>
+
+          <details class="faq-item">
+            <summary>¿Cómo puedo reportar un error o enviar sugerencias?</summary>
+            <p>
+              Puedes utilizar el formulario de contacto disponible en esta página. Todas las observaciones y sugerencias
+              ayudan a mejorar el proyecto y fortalecer la experiencia del usuario.
+            </p>
+          </details>
+        </div>
+        ```
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a href="index.html" class="nav-logo">MERKA<span>TECH</span></a>
+          <p class="footer-desc">Tecnología para todos en Medellín, Colombia.</p>
+        </div>
+        <div>
+          <p class="footer-title">Tienda</p>
+          <ul>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-title">Contacto</p>
+          <ul>
+            <li>Medellín, Colombia</li>
+            <li>hola@marketech.co</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MerkaTech · Construido con HTML, CSS y GitHub Pages</p>
+      </div>
+    </footer>
+
+    <script>
+      function handleSubmit(e) {
+        e.preventDefault();
+        document.getElementById("success-msg").style.display = "block";
+        e.target.reset();
+      }
+    </script>
+  </body>
 </html>
