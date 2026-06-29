@@ -1,3 +1,28 @@
+/* ==================================================
+   MARKETECH - HOJA DE ESTILOS PRINCIPAL
+
+   ÍNDICE
+
+   1. Variables
+   2. Reset Global
+   3. Layout General
+   4. Navbar
+   5. Botones
+   6. Hero
+   7. Secciones Generales
+   8. Categorías
+   9. Productos Destacados
+   10. Banner
+   11. Footer
+   12. Página Productos
+   13. Página Nosotros
+   14. Página Contacto
+   15. Testimonios
+   16. Historia Timeline
+   17. Responsive
+
+================================================== */
+
 /* ── VARIABLES ── */
 :root {
   --bg:       #0A0A0A;
@@ -15,6 +40,8 @@
   --shadow: 0 4px 24px rgba(0,0,0,0.4);
 }
 
+/* ── RESET GLOBAL ── */
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 
@@ -28,6 +55,8 @@ body {
 
 a { text-decoration: none; color: inherit; }
 ul { list-style: none; }
+
+/* ── LAYOUT GENERAL ── */
 
 .container {
   max-width: 1100px;
@@ -427,8 +456,7 @@ ul { list-style: none; }
 .info-value { font-weight: 500; }
 
 /* ===========================
-   SECCIÓN TESTIMONIOS
-   Pegar al final de styles.css
+   TESTIMONIOS
 =========================== */
 
 .testimonios {
@@ -531,8 +559,7 @@ ul { list-style: none; }
 }
  
 /* ===========================
-   SECCIÓN HISTORIA — TIMELINE
-   Pegar al final de styles.css
+   HISTORIA TIMELINE
 =========================== */
 
 .historia-timeline {
@@ -598,3 +625,10 @@ ul { list-style: none; }
   .contact-grid { grid-template-columns: 1fr; }
   .nav-links { display: none; }
 }
+
+/* ==================================================
+   Archivo: styles.css
+   Proyecto: MarkeTech
+   Última actualización: Junio 2026
+   Propósito: Estilos globales del sitio
+================================================== */
