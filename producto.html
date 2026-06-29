@@ -34,7 +34,7 @@
     </div>
 
     <!-- PRODUCTOS EN OFERTA -->
-    <section class="catalog-section">
+    <section class="catalog-section" id="catalogo">
       <div class="container">
         <p class="section-tag">// Promociones especiales</p>
         <h2 class="section-title">Productos en Oferta</h2>
@@ -119,17 +119,17 @@
       <div class="container">
         <!-- FILTROS -->
         <div class="filter-bar">
-          <button class="filter-btn active">Todos</button>
-          <button class="filter-btn">Laptops</button>
-          <button class="filter-btn">Monitores</button>
-          <button class="filter-btn">Periféricos</button>
-          <button class="filter-btn">Móviles</button>
-          <button class="filter-btn">Audio</button>
-          <button class="filter-btn">Accesorios</button>
+          <a href="#catalogo" class="filter-btn">Todos</a>
+          <a href="#laptops" class="filter-btn">Laptops</a>
+          <a href="#monitores" class="filter-btn">Monitores</a>
+          <a href="#perifericos" class="filter-btn">Periféricos</a>
+          <a href="#moviles" class="filter-btn">Móviles</a>
+          <a href="#audio" class="filter-btn">Audio</a>
+          <a href="#accesorios" class="filter-btn">Accesorios</a>
         </div>
 
         <!-- LAPTOPS -->
-        <p class="section-tag" style="margin-bottom: 1rem">// Laptops</p>
+        <p class="section-tag" style="margin-bottom: 1rem"><span id="laptops"></span>// Laptops</p>
         <div class="products-grid" style="margin-bottom: 3rem">
           <div class="product-card">
             <span class="product-badge">Nuevo</span>
@@ -172,7 +172,7 @@
         </div>
 
         <!-- MONITORES -->
-        <p class="section-tag" style="margin-bottom: 1rem">// Monitores</p>
+        <p class="section-tag" style="margin-bottom: 1rem"><span id="monitores"></span>// Monitores</p>
         <div class="products-grid" style="margin-bottom: 3rem">
           <div class="product-card">
             <span class="product-badge">Popular</span>
@@ -205,7 +205,7 @@
         </div>
 
         <!-- PERIFÉRICOS -->
-        <p class="section-tag" style="margin-bottom: 1rem">// Periféricos</p>
+        <p class="section-tag" style="margin-bottom: 1rem"><span id="perifericos"></span>// Periféricos</p>
         <div class="products-grid" style="margin-bottom: 3rem">
           <div class="product-card">
             <span class="product-badge">Dev pick</span>
@@ -258,7 +258,7 @@
         </div>
 
         <!-- MÓVILES -->
-        <p class="section-tag" style="margin-bottom: 1rem">// Móviles</p>
+        <p class="section-tag" style="margin-bottom: 1rem"><span id="moviles"></span>// Móviles</p>
         <div class="products-grid" style="margin-bottom: 3rem">
           <div class="product-card">
             <span class="product-badge">Nuevo</span>
@@ -293,7 +293,7 @@
         </div>
 
         <!-- AUDIO -->
-        <p class="section-tag" style="margin-bottom: 1rem">// Audio</p>
+        <p class="section-tag" style="margin-bottom: 1rem"><span id="audio"></span>// Audio</p>
         <div class="products-grid">
           <div class="product-card">
             <span class="product-badge">Top</span>
@@ -335,7 +335,7 @@
           </div>
         </div>
         <!-- ACCESORIOS -->
-        <p class="section-tag" style="margin-bottom: 1rem">// Accesorios</p>
+        <p class="section-tag" style="margin-bottom: 1rem"><span id="accesorios"></span>// Accesorios</p>
         <div class="products-grid">
           <div class="product-card">
             <div class="product-img">🔋</div>
@@ -388,15 +388,6 @@
       </div>
     </footer>
 
-    <script>
-      // Filtros interactivos
-      const btns = document.querySelectorAll(".filter-btn");
-      btns.forEach((btn) => {
-        btn.addEventListener("click", () => {
-          btns.forEach((b) => b.classList.remove("active"));
-          btn.classList.add("active");
-        });
-      });
-    </script>
+    
   </body>
 </html>
